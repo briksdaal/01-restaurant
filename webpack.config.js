@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   optimization: {
     usedExports: true,
   },
@@ -30,7 +30,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|avif|svg)$/i,
+        test: /\.(png|webp|svg|jpg|jpeg|gif|avif|svg)$/i,
         type: 'asset/resource',
       },
       {
