@@ -3,7 +3,7 @@ function getHeader() {
   header.classList.add('header');
 
   const h1 = document.createElement('h1');
-  h1.textContent = 'Falafel Shawarma Inc';
+  h1.textContent = 'Sherpa Sherpa Falafel';
 
   const nav = document.createElement('ul');
   nav.classList.add('nav');
