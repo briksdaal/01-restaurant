@@ -1,9 +1,8 @@
 body {
     background: blue;
+    text-align: center;
 }
 
-.content {
-    height: 300px;
-    width: 300px;
-    background: grey;
+.main-content {
+    padding: 100px;
 }

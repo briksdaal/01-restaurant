@@ -11,16 +11,19 @@ function getHeader() {
   const homeBtn = document.createElement('button');
   homeBtn.textContent = 'Home';
   home.appendChild(homeBtn);
+  homeBtn.dataset.pageBtn = 'home';
 
   const menu = document.createElement('li');
   const menuBtn = document.createElement('button');
   menuBtn.textContent = 'Menu';
   menu.appendChild(menuBtn);
+  menuBtn.dataset.pageBtn = 'menu';
 
   const contact = document.createElement('li');
   const contactBtn = document.createElement('button');
   contactBtn.textContent = 'Contact';
   contact.appendChild(contactBtn);
+  contactBtn.dataset.pageBtn = 'contact';
 
   nav.appendChild(home);
   nav.appendChild(menu);
