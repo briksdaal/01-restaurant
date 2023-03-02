@@ -22,16 +22,11 @@
 body {
   background: var(--color-white);
   font-family: "Roboto", sans-serif;
-  text-align: center;
 }
 
 h1 {
   font-family: "falafel", sans-serif;
   font-size: 2.5rem;
-}
-
-.main {
-  padding: 100px;
 }
 
 .header {
@@ -68,4 +63,55 @@ h1 {
     width: calc(100% - 0.2rem);
     height: 2px;
     border-bottom: 3px solid #000;
+}
+
+/* Home page styles */
+
+.home-page .hero {
+    position: relative;
+    height: 500px;
+    background-image: url(./images/falafel_plate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.hero h2 {
+    position: relative;
+    z-index: 10;
+    color: var(--color-white);
+    font-size: 4rem;
+}
+
+.home-content {
+    padding-top: 3rem;
+    max-width: 980px;
+    margin: 0 auto;
+
+}
+
+.home-content p {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+/* Menu page styles */
+
+/* Contact page styles */
+
+/* Footer Styles */
+.footer {
+    padding: 1rem;
+    margin-top: 3rem;
 }
