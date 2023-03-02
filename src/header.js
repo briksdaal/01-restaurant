@@ -6,6 +6,7 @@ function getHeader() {
   h1.textContent = 'Falafel Shawarma Inc';
 
   const nav = document.createElement('ul');
+  nav.classList.add('nav');
 
   const home = document.createElement('li');
   const homeBtn = document.createElement('button');
