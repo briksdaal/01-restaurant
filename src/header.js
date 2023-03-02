@@ -10,6 +10,7 @@ function getHeader() {
 
   const home = document.createElement('li');
   const homeBtn = document.createElement('button');
+  homeBtn.classList.add('active');
   homeBtn.textContent = 'Home';
   home.appendChild(homeBtn);
   homeBtn.dataset.pageBtn = 'home';

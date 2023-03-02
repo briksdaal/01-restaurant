@@ -13,7 +13,9 @@ function loadPage() {
     const mainContent = document.querySelector('.main');
 
     button.addEventListener('click', (e) => {
-      console.log(e.target);
+      buttons.forEach((loopBtn) => loopBtn.classList.remove('active'));
+      button.classList.add('active');
+
       mainContent.innerHTML = '';
 
       const { pageBtn } = e.target.dataset;
