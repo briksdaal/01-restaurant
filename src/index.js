@@ -7,12 +7,13 @@ import './style.css';
 function loadPage() {
   getInitial();
 
-  const buttons = document.querySelectorAll('.nav li');
+  const buttons = document.querySelectorAll('.nav li button');
 
   buttons.forEach((button) => {
     const mainContent = document.querySelector('.main');
 
     button.addEventListener('click', (e) => {
+      console.log(e.target);
       mainContent.innerHTML = '';
 
       const { pageBtn } = e.target.dataset;

@@ -1,14 +1,18 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   mode: 'development',
+  optimization: {
+    usedExports: true,
+  },
   entry: './src/index.js',
-  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
     }),
+    // new BundleAnalyzerPlugin(),
   ],
   devServer: {
     static: './dist',

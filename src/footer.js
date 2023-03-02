@@ -1,4 +1,5 @@
 import { mdiGithub } from '@mdi/js';
+import { cube } from './math';
 import createSvg from './createSvg';
 
 function getFooter() {
@@ -18,7 +19,7 @@ function getFooter() {
   ghLink.setAttribute('target', '_blank');
 
   const svg = createSvg(mdiGithub);
-
+  console.log(cube(5));
   ghLink.appendChild(svg);
 
   para.appendChild(ghLink);
