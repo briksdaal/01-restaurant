@@ -1,3 +1,6 @@
+import { mdiGithub } from '@mdi/js';
+import createSvg from './createSvg';
+
 function getFooter() {
   const footer = document.createElement('div');
   footer.classList.add('footer');
@@ -6,8 +9,20 @@ function getFooter() {
   content.classList.add('footer-inner');
   content.textContent = 'Created by Briksdaal';
 
-  footer.appendChild(content);
+  //   footer.appendChild(content);
 
+  const para = document.createElement('p');
+  para.textContent = `Copyright © ${new Date().getFullYear()} Briksdaal `;
+  const ghLink = document.createElement('a');
+  ghLink.setAttribute('href', 'https://github.com/briksdaal');
+  ghLink.setAttribute('target', '_blank');
+
+  const svg = createSvg(mdiGithub);
+
+  ghLink.appendChild(svg);
+
+  para.appendChild(ghLink);
+  footer.appendChild(para);
   return footer;
 }
 

@@ -7,7 +7,7 @@ function getHome() {
   const falafel = new Image();
   falafel.src = falafelImg;
 
-  home.appendChild(falafel);
+  //   home.appendChild(falafel);
 
   return home;
 }
